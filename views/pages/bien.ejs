@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Datos del Bien</title            
+    </head>
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    <h4>Datos del bien</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="form-group col-md-6 alert alert-warning">
+                        <label><b>Inventario</b></label>
+                        <div>
+                            <span><%=bien.numInventarioget%></span>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label><b>Tipo Bien</b></label>
+                        <div>
+                            <span><%=bien.nombreTipoBien%></span>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label><b>Rubro</b></label>
+                        <div>
+                            <span><%=bien.rubro%></span>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label><b>Subtipo</b></label>
+                        <div>
+                            <span><%=bien.subtipo%></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="form-group col-md-6">
+                        <label><b>Número de Factura</b></label>
+                        <div>
+                            <span><%=bien.numFactura%></span>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label><b>Fecha de Factura</b></label>
+                        <div>
+                            <span><%=bien.fechaFactura%></span>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label><b>Marca</b></label>
+                        <div><%=bien.nombreMarca%></div>
+                    </div> 
+                    <div class="form-group col-md-6">
+                        <label><b>Modelo</b></label>
+                        <div><%=bien.nombreModelo%></div>
+                    </div>                 
+                </div>
+                <div class="row mt-2">
+                    <div class="form-group col-md-6">
+                        <label><b>Precio Unitario</b></label>
+                        <div>
+                            <span><%=bien.precioUnitario%></span>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label><b>Importe I.V.A.</b></label>
+                        <div>
+                            <span><%=bien.importeIva%></span>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6 alert alert-info">
+                        <label><b>Valor Total del Bien</b></label>
+                        <div>
+                            <span><%=bien.valorBien%></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="form-group col-md-6">
+                        <label><b>RFC Resguardante</b></label>
+                        <div><%=bien.rfcResguardante%></div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label><b>Nombre Resguardante</b></label>
+                        <div><%=bien.nombreResguardante%></div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label><b>CABMI</b></label>
+                        <div><%=bien.nombreCabmi%></div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label><b>Partida</b></label>
+                        <div><%=bien.nombrePartida%></div>
+                    </div>                    
+                </div>
+                <div class="row mt-2">
+                    <div class="form-group col-md-6">
+                        <label><b>Ubicación</b></label>
+                        <div><%=bien.nombreUbicacion%></div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label><b>Domicilio</b></label>
+                        <div><%=bien.domicilio%></div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="form-group col-md-12 <%=bien.estilo%>">
+                        <label><b>Estatus</b></label>
+                        <div><%=bien.descEstatusBien%></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
